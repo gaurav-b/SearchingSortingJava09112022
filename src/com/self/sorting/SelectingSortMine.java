@@ -12,7 +12,16 @@ public class SelectingSortMine {
 		selectionSort(arr);
 	}
 
-	private static void selectionSort(int[] arr) {
+	/**
+	 * Logic: first it is marking start and the end indexs as 0 and the last index of the array,
+	 * then it is looking for the largest number in the array and it is swapping it with the last index,
+	 * (which in our case is the endIndex for the moment), then it marking the endIndex with the prv one
+	 * of curr endIndex and keep going on with the above process of finding the largest number and swapping
+	 * it with the endIndex.  
+	 * 
+	 * @param arr
+	 */
+		private static void selectionSort(int[] arr) {
 		
 		int startIndex=0, endIndex=arr.length-1;
 		int indexOfLargestNum;

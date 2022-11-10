@@ -11,6 +11,14 @@ public class InsertionSort {
 		insertionSort(arr);
 	}
 
+	/**
+	 * Logic: it is starting from the index 1 till the last index
+	 * and comparing the elements one by one while traversing backwards
+	 * it will stop swapping and stop backtracking when even one comparison fails
+	 * and there is no need of any swap after that. It will continue till it reaches the end
+	 * 
+	 * @param arr
+	 */
 	private static void insertionSort(int[] arr) {
 		
 		for (int endIndex=1; endIndex<=arr.length-1; endIndex++) {
